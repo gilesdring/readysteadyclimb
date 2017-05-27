@@ -2,3 +2,15 @@
   border-bottom-style: none;
   border-top-style: none;
 }
+
+[data-flickr-embed="true"] {
+  img {
+    width: 100%;
+  }
+}
+
+a {
+  &:visited {
+    color: darken($brand-color, 10%);
+  }
+}
