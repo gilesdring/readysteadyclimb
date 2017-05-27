@@ -1,0 +1,17 @@
+h1, h2, h3 {
+  font-family: $title-font-family;
+}
+.site-title {
+  font-size: 3em;
+  font-family: $site-header-family;
+  &, &:visited {
+    color: $brand-color;
+  }
+}
+.post-meta, .footer-col-wrapper {
+  color: darken($brand-color, 5%);
+}
+.icon > svg path {
+  color: $brand-color;
+  fill: $brand-color;
+}

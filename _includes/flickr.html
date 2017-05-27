@@ -1,0 +1,9 @@
+{% assign href = page.flickr[include.id].href -%}
+{% assign title = page.flickr[include.id].title -%}
+{% assign flickr_ref = href | split: "/" | last | split: "_" | first -%}
+<a data-flickr-embed="true"
+   href="https://www.flickr.com/photos/{{ site.flickr.user }}/{{ flickr_ref }}/"
+   title="{{ title }}">
+   <img src="{{ href }}" alt="{{ title }}"></a>
+<!-- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8">
+</script> -->

@@ -1,0 +1,15 @@
+---
+---
+
+$base-font-family: 'Indie Flower', cursive;
+$title-font-family: 'Amatic SC', cursive;
+$site-header-family: 'Barrio', cursive;
+
+$text-color:       White;
+$background-color: DodgerBlue;
+$brand-color:      yellow;
+
+@import "minima";
+@import "google_fonts";
+@import "typography";
+@import "layout";
