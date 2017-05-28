@@ -1,4 +1,12 @@
 ---
 layout: post
 ---
+<div class='col-right' id='walk-information'>
+  <ul>
+    <li>Walk number: {{ page.walk_number }}
+    <li>Distance: {{ page.distance }} km</li>
+    <li>Climbing: {{ page.climbing }} m</li>
+    <li>GPX Link: <a href="/gpx/{{ page.gpx }}">GPX</a></li>
+  </ul>
+</div>
 {{ content }}

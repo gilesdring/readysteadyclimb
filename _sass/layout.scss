@@ -18,3 +18,24 @@ a {
 body {
   background-image: url($background-texture);
 }
+
+.col-left {
+  float: left;
+  width: 50%;
+}
+
+.col-right {
+  float: right;
+  width: 50%;
+}
+
+#walk-information {
+  background: lighten($brand-color, 15%);
+  color: $background-color;
+  & > * {
+    padding: 10px;
+  }
+  a, a:visited {
+    color: darken($brand-color, 50%);
+  }
+}
