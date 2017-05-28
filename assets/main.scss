@@ -5,9 +5,14 @@ $base-font-family: 'Indie Flower', cursive;
 $title-font-family: 'Amatic SC', cursive;
 $site-header-family: 'Barrio', cursive;
 
-$text-color:       White;
-$background-color: DodgerBlue;
-$brand-color:      yellow;
+$base-font-size: 20px;
+
+$text-color:       #f0f0f0; // White
+$brand-color:      #FFD700; // Gold
+$background-color: #663399; // RebeccaPurple
+// $background-texture: "https://www.transparenttextures.com/patterns/dark-stripes-light.png";
+// $background-texture: "https://www.transparenttextures.com/patterns/diamond-upholstery.png";
+$background-texture: "https://www.transparenttextures.com/patterns/fabric-of-squares.png";
 
 @import "minima";
 @import "google_fonts";

@@ -14,3 +14,7 @@ a {
     color: darken($brand-color, 10%);
   }
 }
+
+body {
+  background-image: url($background-texture);
+}
