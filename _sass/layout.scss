@@ -3,10 +3,13 @@
   border-top-style: none;
 }
 
-[data-flickr-embed="true"] {
-  img {
-    width: 100%;
-  }
+img {
+  width: 100%;
+}
+
+blockquote {
+  color: $brand-color;
+  border-left: none;
 }
 
 a {

@@ -1,0 +1,13 @@
+<!-- https://www.webcodegeeks.com/html5/html5-slideshow-example/ -->
+<div class="css-slideshow">
+  {% assign slide_time = 6 %}
+  {% assign slider_duration = page.photos | size | times: slide_time %}
+  {% for i in page.photos %}
+  {% assign sub = forloop.index | times: slide_time %}
+  {% capture ani %}xfade {{ slider_duration }}s {{ slider_duration | minus: sub }}s infinite;{% endcapture %}
+  <figure style="-webkit-animation: {{ani}};-moz-animation: {{ani}};-ms-animation: {{ani}};-o-animation: {{ani}}; animation: {{ani}}; ">
+    <img src="{{ i.src }}" alt="{{ i.title }}">
+    <figcaption>{{ i.title }}</figcaption>
+  </figure>
+  {% endfor -%}
+</div>

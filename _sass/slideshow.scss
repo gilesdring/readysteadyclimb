@@ -1,0 +1,90 @@
+.css-slideshow {
+     position: relative;			/* positioning facilities */
+     margin: 1em auto .5em auto;				/* some margin */
+}
+
+.css-slideshow figure {
+     margin: 0;					/* ensuring there is no margin */
+     position: absolute;			/* positioning facilities */
+}
+
+.css-slideshow img {				/* a shadow for our box wrapper */
+    -webkit-box-shadow: 0 0 2px #666;
+     box-shadow: 0 0 2px #666;
+}
+
+/* Give the figcaption a 0% opacity at first */
+.css-slideshow figcaption {
+  position: absolute;
+	top: 5px;
+	color: #fff;
+	background: rgba(0,0,0, .3);
+	font-size: .8em;
+	padding: 8px 12px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	transition: opacity .5s;	/* transition duration */
+}
+
+/* Give the figcaption a 100% opacity now */
+.css-slideshow:hover figure figcaption {
+  -webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	transition: opacity .5s;		/* transition duration */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+@keyframes xfade {
+  0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   	filter: alpha(opacity=100);
+   	opacity: 1;
+  }
+  48% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	  filter: alpha(opacity=100);
+	  opacity: 1;
+  }
+  50% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  98% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   	filter: alpha(opacity=0);
+   	opacity: 0;
+  }
+  100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   	filter: alpha(opacity=100);
+   	opacity: 1;
+  }
+}
+// @-webkit-keyframes xfade {
+//   0% {
+//     filter: alpha(opacity=100);
+//     opacity: 1;
+//   }
+//   2% {
+// 	  filter: alpha(opacity=0);
+//     opacity: 0;
+//   }
+//   98% {
+//     filter: alpha(opacity=0);
+//     opacity: 0;
+//   }
+//   100% {
+//     filter: alpha(opacity=100);
+//     opacity: 1;
+//   }
+// }
