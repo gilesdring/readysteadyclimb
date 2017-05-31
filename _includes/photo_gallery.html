@@ -1,0 +1,8 @@
+<div>
+  {% for i in page.photos %}
+  <figure>
+    <img src="{{ i.src }}" alt="{{ i.title }}">
+    <figcaption>{{ i.title }}</figcaption>
+  </figure>
+  {% endfor -%}
+</div>
