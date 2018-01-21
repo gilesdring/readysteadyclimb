@@ -4,3 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+Hello and welcome to Ready, Steady, Climb in Time! Here are a few of our
+adventures!
