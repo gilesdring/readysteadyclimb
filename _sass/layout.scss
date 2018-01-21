@@ -22,6 +22,10 @@ body {
   background-image: url($background-texture);
 }
 
+@media print {
+  background: none;
+}
+
 .col-left {
   float: left;
   width: 50%;
