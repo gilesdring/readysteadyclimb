@@ -42,3 +42,7 @@ body {
     color: darken($brand-color, 50%);
   }
 }
+
+figure {
+  page-break-inside:avoid;
+}
