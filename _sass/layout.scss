@@ -23,7 +23,8 @@ body {
 }
 
 @media print {
-  background: none;
+  background-color: white;
+  background-image: none;
 }
 
 .col-left {
