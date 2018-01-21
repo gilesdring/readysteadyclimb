@@ -25,6 +25,12 @@ body {
 @media print {
   background-color: white;
   background-image: none;
+  figure {
+    img {
+      max-width: 400px;
+      max-height: 400px;
+    }
+  }
 }
 
 .col-left {
